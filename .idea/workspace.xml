@@ -1,13 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="52707572-0481-491e-a5dc-b3c8286e09db" name="Changes" comment="Create CalculatorMath -&gt; class file for useful functions">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GradeMath/GradeMath.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GradeMath/StringFormat.java" afterDir="false" />
+    <list default="true" id="52707572-0481-491e-a5dc-b3c8286e09db" name="Changes" comment="First 1.0 working version of average calculator">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CalculatorMath/CalculatorMath.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GradeMath/GradeMath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GradeMath/GradeMath.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +75,7 @@
       <option name="presentableId" value="Default" />
       <updated>1669868526957</updated>
       <workItem from="1669868528359" duration="7127000" />
-      <workItem from="1669914315832" duration="762000" />
+      <workItem from="1669914315832" duration="2535000" />
     </task>
     <task id="LOCAL-00001" summary="Create CalculatorMath -&gt; class file for useful functions">
       <created>1669869241050</created>
@@ -88,7 +84,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669869241050</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="First 1.0 working version of average calculator">
+      <created>1669915111417</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1669915111417</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -107,6 +110,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Create CalculatorMath -&gt; class file for useful functions" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create CalculatorMath -&gt; class file for useful functions" />
+    <MESSAGE value="First 1.0 working version of average calculator" />
+    <option name="LAST_COMMIT_MESSAGE" value="First 1.0 working version of average calculator" />
   </component>
 </project>

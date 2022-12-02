@@ -25,7 +25,7 @@ public class Main {
 
         StringFormat.bold("\nYour grade for that class is >>> ");
         // round to two decimal places
-        System.out.format("%.2f", minorTotal + majorTotal);
+        System.out.format("%.2f", minorTotal + majorTotal );
 
     }
 }
