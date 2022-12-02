@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="52707572-0481-491e-a5dc-b3c8286e09db" name="Changes" comment="unknown change??">
-      <change afterPath="$PROJECT_DIR$/src/ErrorHandling/InvalidNumber.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/StringFormat/ConsoleColors.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/StringFormat/StringFormat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Grade Calculator.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Grade Calculator.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GradeMath/GradeMath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GradeMath/GradeMath.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GradeMath/StringFormat.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-    </list>
+    <list default="true" id="52707572-0481-491e-a5dc-b3c8286e09db" name="Changes" comment="Better colored format, checking grades out of fractions (I think), new organization" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -46,7 +37,8 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "create.test.in.the.same.root": "true"
+    "create.test.in.the.same.root": "true",
+    "jdk.selected.JAVA_MODULE": "17"
   }
 }]]></component>
   <component name="RunManager" selected="Application.Main">
@@ -86,7 +78,7 @@
       <option name="presentableId" value="Default" />
       <updated>1669868526957</updated>
       <workItem from="1669868528359" duration="7127000" />
-      <workItem from="1669914315832" duration="14092000" />
+      <workItem from="1669914315832" duration="14577000" />
     </task>
     <task id="LOCAL-00001" summary="Create CalculatorMath -&gt; class file for useful functions">
       <created>1669869241050</created>
@@ -123,7 +115,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669961059807</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Better colored format, checking grades out of fractions (I think), new organization">
+      <created>1670003016988</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1670003016988</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -134,7 +133,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="BEK_SORT_TYPE" value="1" />
+            </State>
           </value>
         </entry>
       </map>
@@ -146,7 +147,8 @@
     <MESSAGE value="New formatting + other changes" />
     <MESSAGE value="add calculating grade out of fractional values" />
     <MESSAGE value="unknown change??" />
-    <option name="LAST_COMMIT_MESSAGE" value="unknown change??" />
+    <MESSAGE value="Better colored format, checking grades out of fractions (I think), new organization" />
+    <option name="LAST_COMMIT_MESSAGE" value="Better colored format, checking grades out of fractions (I think), new organization" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
