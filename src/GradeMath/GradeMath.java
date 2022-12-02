@@ -27,7 +27,7 @@ public class GradeMath {
                 System.out.print("\nEnter the grade of minor #" + i + " >>> ");
             }
             else {
-                // if grade is a major
+                // if grade is a major1
                 System.out.print("\nEnter the grade of major #" + i + " >>> ");
             }
             // to extrapolate current grade
