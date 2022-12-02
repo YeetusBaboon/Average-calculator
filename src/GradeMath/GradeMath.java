@@ -34,7 +34,6 @@ public class GradeMath {
         double currentGrade;
 
         for (int i = 1; i <= args; i++) {
-            try {
                 if (grade) {
                     // if grade is a minor
                     System.out.print("\nEnter the grade of minor #" + i + " >>> ");
@@ -42,10 +41,6 @@ public class GradeMath {
                     // if grade is a major1
                     System.out.print("\nEnter the grade of major #" + i + " >>> ");
                 }
-            }
-            catch (NumberFormatException e) {
-                e.printStackTrace();
-            }
             // to extrapolate current grade
             currentGrade = userInput.nextDouble();
 
@@ -53,17 +48,12 @@ public class GradeMath {
                 result += currentGrade;
             }
             else {
-                try {
                     System.out.print("What is that grade calculated out of (default 100) >>> ");
                     double gradeFraction = userInput.nextDouble();
 
                     // multiply fraction to magic number of DEFAULT_GRADE
                     result += currentGrade * (DEFAULT_GRADE / gradeFraction);
                 }
-                catch (ArithmeticException e) {
-                    e.printStackTrace();
-                }
-            }
         }
         return result;
     }
