@@ -1,4 +1,4 @@
-import ErrorHandling.InvalidNumber;
+import ErrorHandling.*;
 import GradeMath.GradeMath;
 import StringFormat.StringFormat;
 import java.util.Scanner;
@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class Main {
     // TODO: Write a GPA Calculator using this code
     public static void main(String[] args)
-        throws InvalidNumber
+        throws InvalidNumber, LargeInput
     {
         Scanner userInput = new Scanner(System.in);
 
@@ -17,10 +17,17 @@ public class Main {
 
         StringFormat.bold("How many minors are being calculated? >>> ");
         int minorNumber = userInput.nextInt();
+        if (minorNumber > 25) {
+            throw new LargeInput("Input is too large, try again with smaller numbers.");
+        }
+
         double totalMinorPoints = GradeMath.gradeCounter(minorNumber, true);
 
         StringFormat.bold("\nHow many majors are being calculated? >>> ");
         int majorNumber = userInput.nextInt();
+        if (majorNumber > 25) {
+            throw new LargeInput("Input is too large, try again with smaller numbers.");
+        }
 
         if (minorNumber == 0 && majorNumber == 0) {
             throw new InvalidNumber("Cannot calculate average with no grades.");
