@@ -1,10 +1,11 @@
+import ErrorHandling.InvalidString;
 import GradeMath.GradeMath;
 import GradeMath.StringFormat;
 import java.util.Scanner;
 
 public class Main {
     // TODO: Write a GPA Calculator using this code
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InvalidString {
         Scanner userInput = new Scanner(System.in);
 
         final double MINOR_WEIGHT = 0.4;
@@ -20,12 +21,13 @@ public class Main {
         double totalMajorPoints = GradeMath.gradeCounter(majorNumber, false);
 
         // avg of all grades multiplied by their weight
-        double minorTotal = GradeMath.average(minorNumber, MINOR_WEIGHT, totalMinorPoints);
-        double majorTotal = GradeMath.average(majorNumber, MAJOR_WEIGHT, totalMajorPoints);
+        double finalGrade = GradeMath.average(minorNumber, MINOR_WEIGHT, totalMinorPoints) +
+                            GradeMath.average(majorNumber, MAJOR_WEIGHT, totalMajorPoints);
 
         StringFormat.bold("\nYour grade for that class is >>> ");
         // round to two decimal places
-        System.out.format("%.2f", minorTotal + majorTotal );
+        System.out.format("%.2f", finalGrade );
 
     }
+
 }
