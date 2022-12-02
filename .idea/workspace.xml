@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="52707572-0481-491e-a5dc-b3c8286e09db" name="Changes" comment="new error catching (large input)" />
+    <list default="true" id="52707572-0481-491e-a5dc-b3c8286e09db" name="Changes" comment="remove useless code (note to self: stop over-engineering simple stuff)">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GradeMath/GradeMath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GradeMath/GradeMath.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -85,7 +88,7 @@
       <workItem from="1669914315832" duration="16358000" />
       <workItem from="1670014629241" duration="1090000" />
       <workItem from="1670015751115" duration="796000" />
-      <workItem from="1670016615082" duration="1827000" />
+      <workItem from="1670016615082" duration="2736000" />
     </task>
     <task id="LOCAL-00001" summary="Create CalculatorMath -&gt; class file for useful functions">
       <created>1669869241050</created>
@@ -150,7 +153,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670018494624</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="remove useless code (note to self: stop over-engineering simple stuff)">
+      <created>1670019005145</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1670019005145</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -179,7 +189,8 @@
     <MESSAGE value="new readme file" />
     <MESSAGE value="a few formatting changes (and failing to throw exceptions" />
     <MESSAGE value="new error catching (large input)" />
-    <option name="LAST_COMMIT_MESSAGE" value="new error catching (large input)" />
+    <MESSAGE value="remove useless code (note to self: stop over-engineering simple stuff)" />
+    <option name="LAST_COMMIT_MESSAGE" value="remove useless code (note to self: stop over-engineering simple stuff)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

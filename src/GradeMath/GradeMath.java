@@ -5,7 +5,6 @@ import java.util.Scanner;
 import ErrorHandling.InvalidNumber;
 
 public class GradeMath {
-    private static final double DEFAULT_GRADE = 100.0;
 
     public static double average(int args, double weight, double @NotNull ... total) {
         // varargs is used for parsing flexibility
@@ -48,12 +47,13 @@ public class GradeMath {
                 result += currentGrade;
             }
             else {
-                    System.out.print("What is that grade calculated out of (default 100) >>> ");
-                    double gradeFraction = userInput.nextDouble();
+                System.out.print("What is that grade calculated out of (default 100) >>> ");
+                double gradeFraction = userInput.nextDouble();
 
-                    // multiply fraction to magic number of DEFAULT_GRADE
-                    result += currentGrade * (DEFAULT_GRADE / gradeFraction);
-                }
+                // multiply fraction to magic number of DEFAULT_GRADE
+                double DEFAULT_GRADE = 100.0;
+                result += currentGrade * (DEFAULT_GRADE / gradeFraction);
+            }
         }
         return result;
     }
