@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="52707572-0481-491e-a5dc-b3c8286e09db" name="Changes" comment="New formatting + other changes">
-      <change afterPath="$PROJECT_DIR$/src/ErrorHandling/InvalidString.java" afterDir="false" />
+    <list default="true" id="52707572-0481-491e-a5dc-b3c8286e09db" name="Changes" comment="unknown change??">
+      <change afterPath="$PROJECT_DIR$/src/ErrorHandling/InvalidNumber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/StringFormat/ConsoleColors.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/StringFormat/StringFormat.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Grade Calculator.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Grade Calculator.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GradeMath/GradeMath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GradeMath/GradeMath.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GradeMath/StringFormat.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -34,6 +38,10 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -47,7 +55,7 @@
       <module name="Grade Calculator" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="GradeMath.*" />
+          <option name="PATTERN" value="StringFormat.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -78,7 +86,7 @@
       <option name="presentableId" value="Default" />
       <updated>1669868526957</updated>
       <workItem from="1669868528359" duration="7127000" />
-      <workItem from="1669914315832" duration="9017000" />
+      <workItem from="1669914315832" duration="14092000" />
     </task>
     <task id="LOCAL-00001" summary="Create CalculatorMath -&gt; class file for useful functions">
       <created>1669869241050</created>
@@ -101,7 +109,21 @@
       <option name="project" value="LOCAL" />
       <updated>1669953360454</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add calculating grade out of fractional values">
+      <created>1669960895087</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1669960895087</updated>
+    </task>
+    <task id="LOCAL-00005" summary="unknown change??">
+      <created>1669961059807</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1669961059807</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -122,6 +144,18 @@
     <MESSAGE value="Create CalculatorMath -&gt; class file for useful functions" />
     <MESSAGE value="First 1.0 working version of average calculator" />
     <MESSAGE value="New formatting + other changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="New formatting + other changes" />
+    <MESSAGE value="add calculating grade out of fractional values" />
+    <MESSAGE value="unknown change??" />
+    <option name="LAST_COMMIT_MESSAGE" value="unknown change??" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.util.InputMismatchException" package="java.util" />
+          <option name="timeStamp" value="5" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

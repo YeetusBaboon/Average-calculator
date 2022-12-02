@@ -1,11 +1,13 @@
 package GradeMath;
 
-import ErrorHandling.InvalidString;
-
+import org.jetbrains.annotations.NotNull;
 import java.util.Scanner;
+import ErrorHandling.InvalidNumber;
 
 public class GradeMath {
-    public static double average(int args, double weight, double ... total) {
+    private static final double DEFAULT_GRADE = 100.0;
+
+    public static double average(int args, double weight, double @NotNull ... total) {
         // varargs is used for parsing flexibility
         double result = 0.0;
 
@@ -14,12 +16,22 @@ public class GradeMath {
             result += i;
         }
         // weighted average
-            return (result/args) * weight;
+        return (result / args) * weight;
     }
+
+    public static String roundOff(int places, double number)
+        throws InvalidNumber
+    {
+        if (places == 0 || number == 0) {
+            throw new InvalidNumber("Cannot round a nonexistent number");
+        }
+        return String.format("%." + places + "f", number);
+    }
+
     public static double gradeCounter(int args, boolean grade) {
         Scanner userInput = new Scanner(System.in);
         double result = 0;
-        double currentGrade = 0;
+        double currentGrade;
 
         for (int i = 1; i <= args; i++) {
             if (grade) {
@@ -33,17 +45,20 @@ public class GradeMath {
             // to extrapolate current grade
             currentGrade = userInput.nextDouble();
 
-            System.out.print("\nIs that grade calculated out of 100? (yes or no) >>> ");
-            String userChoice = userInput.next();
-
-            if (userChoice.equals("no")) {
-                System.out.print("What is that grade calculated out of? >>> ");
-                double gradeFraction = userInput.nextDouble();
-
-                result += currentGrade * (100.0 / gradeFraction);
+            if (currentGrade > 50) {
+                result += currentGrade;
             }
             else {
-                result += currentGrade;
+                try {
+                    System.out.print("What is that grade calculated out of (default 100) >>> ");
+                    double gradeFraction = userInput.nextDouble();
+
+                    // multiply fraction to magic number of DEFAULT_GRADE
+                    result += currentGrade * (DEFAULT_GRADE / gradeFraction);
+                }
+                catch (ArithmeticException e) {
+                    e.printStackTrace();
+                }
             }
         }
         return result;
