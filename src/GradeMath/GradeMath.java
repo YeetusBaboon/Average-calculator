@@ -19,13 +19,13 @@ public class GradeMath {
         return (result / args) * weight;
     }
 
-    public static String roundOff(int places, double number)
+    public static String roundOff(int roundingPlaces, double number)
         throws InvalidNumber
     {
-        if (places == 0 || number == 0) {
-            throw new InvalidNumber("Cannot round a nonexistent number");
+        if (roundingPlaces == 0 || number == 0) {
+            throw new InvalidNumber("Cannot round with incorrect values");
         }
-        return String.format("%." + places + "f", number);
+        return String.format("%." + roundingPlaces + "f", number);
     }
 
     public static double gradeCounter(int args, boolean grade) {
@@ -34,13 +34,17 @@ public class GradeMath {
         double currentGrade;
 
         for (int i = 1; i <= args; i++) {
-            if (grade) {
-                // if grade is a minor
-                System.out.print("\nEnter the grade of minor #" + i + " >>> ");
+            try {
+                if (grade) {
+                    // if grade is a minor
+                    System.out.print("\nEnter the grade of minor #" + i + " >>> ");
+                } else {
+                    // if grade is a major1
+                    System.out.print("\nEnter the grade of major #" + i + " >>> ");
+                }
             }
-            else {
-                // if grade is a major1
-                System.out.print("\nEnter the grade of major #" + i + " >>> ");
+            catch (NumberFormatException e) {
+                e.printStackTrace();
             }
             // to extrapolate current grade
             currentGrade = userInput.nextDouble();

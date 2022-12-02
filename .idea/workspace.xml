@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="52707572-0481-491e-a5dc-b3c8286e09db" name="Changes" comment="Better colored format, checking grades out of fractions (I think), new organization" />
+    <list default="true" id="52707572-0481-491e-a5dc-b3c8286e09db" name="Changes" comment="new readme file">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GradeMath/GradeMath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GradeMath/GradeMath.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StringFormat/StringFormat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StringFormat/StringFormat.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -26,21 +31,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Downloaded.Files.Path.Enabled": "false",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "create.test.in.the.same.root": "true",
-    "jdk.selected.JAVA_MODULE": "17"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;create.test.in.the.same.root&quot;: &quot;true&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Application.Main">
     <configuration name="GradeMath" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="GradeMath.GradeMath" />
@@ -78,7 +84,9 @@
       <option name="presentableId" value="Default" />
       <updated>1669868526957</updated>
       <workItem from="1669868528359" duration="7127000" />
-      <workItem from="1669914315832" duration="14577000" />
+      <workItem from="1669914315832" duration="16358000" />
+      <workItem from="1670014629241" duration="1090000" />
+      <workItem from="1670015751115" duration="796000" />
     </task>
     <task id="LOCAL-00001" summary="Create CalculatorMath -&gt; class file for useful functions">
       <created>1669869241050</created>
@@ -122,7 +130,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670003016988</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="new readme file">
+      <created>1670003461967</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1670003461967</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -148,7 +163,8 @@
     <MESSAGE value="add calculating grade out of fractional values" />
     <MESSAGE value="unknown change??" />
     <MESSAGE value="Better colored format, checking grades out of fractions (I think), new organization" />
-    <option name="LAST_COMMIT_MESSAGE" value="Better colored format, checking grades out of fractions (I think), new organization" />
+    <MESSAGE value="new readme file" />
+    <option name="LAST_COMMIT_MESSAGE" value="new readme file" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
