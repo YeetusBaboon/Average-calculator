@@ -50,7 +50,6 @@ public class GradeMath {
                 System.out.print("What is that grade calculated out of (default 100) >>> ");
                 double gradeFraction = userInput.nextDouble();
 
-                // multiply fraction to magic number of DEFAULT_GRADE
                 double DEFAULT_GRADE = 100.0;
                 result += currentGrade * (DEFAULT_GRADE / gradeFraction);
             }
