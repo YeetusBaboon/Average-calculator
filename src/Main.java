@@ -15,15 +15,24 @@ public class Main {
         final double FAILING_GRADE = 70;
         // FIXME: constant declaration
 
-        StringFormat.bold("How many minors are being calculated? >>> ");
+        // instructions for user
+        StringFormat.bold("-".repeat(50));
+        System.out.println("\nThis program calculates the average for any given class");
+        System.out.println("When prompted, please enter the number of minors and majors");
+        System.out.println("that are graded in that class. enter only integer values");
+        StringFormat.bold("-".repeat(50));
+        System.out.println();
+
+        StringFormat.redBold("How many minors are being calculated? >>> ");
         int minorNumber = userInput.nextInt();
         if (minorNumber > 25) {
             throw new LargeInput("Input is too large, try again with smaller numbers.");
         }
 
+        // minor grade
         double totalMinorPoints = GradeMath.gradeCounter(minorNumber, true);
 
-        StringFormat.bold("\nHow many majors are being calculated? >>> ");
+        StringFormat.redBold("\nHow many majors are being calculated? >>> ");
         int majorNumber = userInput.nextInt();
         if (majorNumber > 25) {
             throw new LargeInput("Input is too large, try again with smaller numbers.");

@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="52707572-0481-491e-a5dc-b3c8286e09db" name="Changes" comment="i forgot what i did here ngl">
+    <list default="true" id="52707572-0481-491e-a5dc-b3c8286e09db" name="Changes" comment="very small source changes + workspace.xml">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GradeMath/GradeMath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GradeMath/GradeMath.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StringFormat/StringFormat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StringFormat/StringFormat.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +49,11 @@
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;create.test.in.the.same.root&quot;: &quot;true&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.new.ui&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -97,6 +105,8 @@
       <workItem from="1670267557429" duration="23000" />
       <workItem from="1670267597641" duration="55000" />
       <workItem from="1670267666124" duration="74000" />
+      <workItem from="1670357085431" duration="641000" />
+      <workItem from="1670363958325" duration="2495000" />
     </task>
     <task id="LOCAL-00001" summary="Create CalculatorMath -&gt; class file for useful functions">
       <created>1669869241050</created>
@@ -175,7 +185,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670021412738</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="very small source changes + workspace.xml">
+      <created>1670357170968</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1670357170968</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -206,7 +223,8 @@
     <MESSAGE value="new error catching (large input)" />
     <MESSAGE value="remove useless code (note to self: stop over-engineering simple stuff)" />
     <MESSAGE value="i forgot what i did here ngl" />
-    <option name="LAST_COMMIT_MESSAGE" value="i forgot what i did here ngl" />
+    <MESSAGE value="very small source changes + workspace.xml" />
+    <option name="LAST_COMMIT_MESSAGE" value="very small source changes + workspace.xml" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -217,6 +235,10 @@
         </breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Grade_Calculator$Main.ic" NAME="Main Coverage Results" MODIFIED="1670123343753" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
