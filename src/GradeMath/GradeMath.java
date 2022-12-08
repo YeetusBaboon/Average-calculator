@@ -29,6 +29,11 @@ public class GradeMath {
 
     public static double gradeCounter(int args, boolean grade) {
         Scanner userInput = new Scanner(System.in);
+
+        // changes out of 100 logic
+        final double CHECKING_GRADE = 50.0;
+        final double DEFAULT_GRADE = 100.0;
+
         double result = 0;
         double currentGrade;
 
@@ -40,17 +45,18 @@ public class GradeMath {
                     // if grade is a major1
                     System.out.print("\nEnter the grade of major #" + i + " >>> ");
                 }
-            // to extrapolate current grade
+            // to extrapolate current grade via averages
+            // TODO: error catching for user input
             currentGrade = userInput.nextDouble();
 
-            if (currentGrade > 50) {
+            if (currentGrade > CHECKING_GRADE) {
                 result += currentGrade;
             }
             else {
+                // executes if grade is deemed too low (use CHECKING_GRADE)
                 System.out.print("What is that grade calculated out of (default 100) >>> ");
                 double gradeFraction = userInput.nextDouble();
 
-                double DEFAULT_GRADE = 100.0;
                 result += currentGrade * (DEFAULT_GRADE / gradeFraction);
             }
         }
