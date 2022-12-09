@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class Main {
     // TODO: Write a GPA Calculator using this code
     public static void main(String[] args)
-        throws InvalidNumber, LargeInput
+            throws Exception
     {
         Scanner userInput = new Scanner(System.in);
 

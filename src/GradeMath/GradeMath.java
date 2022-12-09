@@ -45,8 +45,10 @@ public class GradeMath {
                     // if grade is a major1
                     System.out.print("\nEnter the grade of major #" + i + " >>> ");
                 }
-            // to extrapolate current grade via averages
-            // TODO: error catching for user input
+            /*
+             to extrapolate current grade via averages
+             TODO: error catching for user input
+            */
             currentGrade = userInput.nextDouble();
 
             if (currentGrade > CHECKING_GRADE) {

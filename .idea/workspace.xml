@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="52707572-0481-491e-a5dc-b3c8286e09db" name="Changes" comment="add user instructions (minimal)">
+    <list default="true" id="52707572-0481-491e-a5dc-b3c8286e09db" name="Changes" comment="slight comment changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GradeMath/GradeMath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GradeMath/GradeMath.java" afterDir="false" />
     </list>
@@ -108,7 +108,7 @@
       <workItem from="1670363958325" duration="2762000" />
       <workItem from="1670390559595" duration="26000" />
       <workItem from="1670439648338" duration="1439000" />
-      <workItem from="1670523898578" duration="753000" />
+      <workItem from="1670523898578" duration="2451000" />
     </task>
     <task id="LOCAL-00001" summary="Create CalculatorMath -&gt; class file for useful functions">
       <created>1669869241050</created>
@@ -201,7 +201,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670375462308</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="slight comment changes">
+      <created>1670529102965</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1670529102965</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -234,7 +241,8 @@
     <MESSAGE value="i forgot what i did here ngl" />
     <MESSAGE value="very small source changes + workspace.xml" />
     <MESSAGE value="add user instructions (minimal)" />
-    <option name="LAST_COMMIT_MESSAGE" value="add user instructions (minimal)" />
+    <MESSAGE value="slight comment changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="slight comment changes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
