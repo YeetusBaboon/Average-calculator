@@ -44,10 +44,6 @@ public class Main {
             throw new InvalidNumber("Cannot calculate grades with nil values");
         }
 
-        if (minorNumber == 0 && majorNumber == 0) {
-            throw new InvalidNumber("Cannot calculate average with no grades.");
-        }
-
         double totalMajorPoints = GradeMath.gradeCounter(majorNumber, false);
 
         double finalGrade = GradeMath.average(minorNumber, MINOR_WEIGHT, totalMinorPoints) +
