@@ -28,6 +28,9 @@ public class Main {
         if (minorNumber > 25) {
             throw new LargeInput("Input is too large, try again with smaller numbers.");
         }
+        else if (minorNumber == 0) {
+            throw new InvalidNumber("Cannot calculate grades with nil values");
+        }
 
         // minor grade
         double totalMinorPoints = GradeMath.gradeCounter(minorNumber, true);
@@ -37,6 +40,9 @@ public class Main {
         if (majorNumber > 25) {
             throw new LargeInput("Input is too large, try again with smaller numbers.");
         }
+        else if (majorNumber == 0) {
+            throw new InvalidNumber("Cannot calculate grades with nil values");
+        }
 
         if (minorNumber == 0 && majorNumber == 0) {
             throw new InvalidNumber("Cannot calculate average with no grades.");
@@ -44,9 +50,9 @@ public class Main {
 
         double totalMajorPoints = GradeMath.gradeCounter(majorNumber, false);
 
-        // avg of all grades multiplied by their weight
         double finalGrade = GradeMath.average(minorNumber, MINOR_WEIGHT, totalMinorPoints) +
-                            GradeMath.average(majorNumber, MAJOR_WEIGHT, totalMajorPoints);
+            GradeMath.average(majorNumber, MAJOR_WEIGHT, totalMajorPoints);
+
         if (finalGrade > FAILING_GRADE) {
             StringFormat.passing("\nYour grade for that class is >>> " + GradeMath.roundOff(2, finalGrade));
         }

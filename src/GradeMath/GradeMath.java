@@ -27,7 +27,7 @@ public class GradeMath {
         return String.format("%." + roundingPlaces + "f", number);
     }
 
-    public static double gradeCounter(int args, boolean grade) {
+    public static double gradeCounter(int args, boolean grade) throws InvalidNumber {
         Scanner userInput = new Scanner(System.in);
 
         // changes out of 100 logic
@@ -50,6 +50,20 @@ public class GradeMath {
              TODO: error catching for user input
             */
             currentGrade = userInput.nextDouble();
+
+            if (currentGrade > 1000) {
+                throw new InvalidNumber("Input is too large");
+            }
+            else if (currentGrade > 100) {
+                System.out.print("Is this grade correct? >>> ");
+                String confirmation = userInput.next();
+
+                if (confirmation.equals("no")) {
+                    System.out.println("Please re-enter that grade >>> ");
+                    currentGrade = userInput.nextDouble();
+                }
+            }
+
 
             if (currentGrade > CHECKING_GRADE) {
                 result += currentGrade;
