@@ -1,10 +1,12 @@
-package GradeMath;
+package Helper;
 
+import ErrorHandling.LargeInput;
+import StringFormat.StringFormat;
 import org.jetbrains.annotations.NotNull;
 import java.util.Scanner;
 import ErrorHandling.InvalidNumber;
 
-public class GradeMath {
+public class Util {
 
     public static double average(int args, double weight, double @NotNull ... total) {
         // varargs is used for parsing flexibility
@@ -18,6 +20,26 @@ public class GradeMath {
         return (result / args) * weight;
     }
 
+    public static void instructions() {
+        StringFormat.bold("-".repeat(50));
+
+        System.out.println("\nThis program calculates the average for any given class");
+        System.out.println("When prompted, please enter the number of minors and majors");
+        System.out.println("that are graded in that class. enter only integer values");
+
+        StringFormat.bold("-".repeat(50));
+        System.out.println();
+    }
+
+    public static void finalResult(double finalGrade, double failingGrade) throws InvalidNumber {
+        if (finalGrade > failingGrade) {
+            StringFormat.passing("\nYour grade for that class is >>> " + Util.roundOff(2, finalGrade));
+        }
+        else {
+            StringFormat.failing("\nYour grade for that class is >>> " + Util.roundOff(2, finalGrade));
+        }
+    }
+
     public static String roundOff(int roundingPlaces, double number)
         throws InvalidNumber
     {
@@ -25,6 +47,36 @@ public class GradeMath {
             throw new InvalidNumber("Cannot round with incorrect values");
         }
         return String.format("%." + roundingPlaces + "f", number);
+    }
+
+    public static int gradeNumber(boolean gradeType) throws LargeInput, InvalidNumber {
+        Scanner userInput = new Scanner(System.in);
+
+        // minor grade
+        if (gradeType) {
+            StringFormat.redBold("How many minors are being calculated? >>> ");
+            int minorNumber = userInput.nextInt();
+            if (minorNumber > 25) {
+                throw new LargeInput("Input is too large, try again with smaller numbers.");
+            }
+            else if (minorNumber == 0) {
+                throw new InvalidNumber("Cannot calculate grades with nil values");
+            }
+
+            return minorNumber;
+
+        }
+        else {
+            StringFormat.redBold("\nHow many majors are being calculated? >>> ");
+            int majorNumber = userInput.nextInt();
+            if (majorNumber > 25) {
+                throw new LargeInput("Input is too large, try again with smaller numbers.");
+            }
+            else if (majorNumber == 0) {
+                throw new InvalidNumber("Cannot calculate grades with nil values");
+            }
+            return majorNumber;
+        }
     }
 
     public static double gradeCounter(int args, boolean grade) throws InvalidNumber {

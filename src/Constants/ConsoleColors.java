@@ -1,4 +1,4 @@
-package StringFormat;
+package Constants;
 
 public class ConsoleColors {
     // Reset

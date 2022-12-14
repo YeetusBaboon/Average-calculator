@@ -1,60 +1,26 @@
-import ErrorHandling.*;
-import GradeMath.GradeMath;
-import StringFormat.StringFormat;
-import java.util.Scanner;
+import Helper.Util;
+import Constants.Grades;
 
 public class Main {
     // TODO: Write a GPA Calculator using this code
     public static void main(String[] args)
             throws Exception
     {
-        Scanner userInput = new Scanner(System.in);
-
-        final double MINOR_WEIGHT = 0.4;
-        final double MAJOR_WEIGHT = 0.6;
-        final double FAILING_GRADE = 70;
-        // FIXME: constant declaration
-
-        // instructions for user
-        StringFormat.bold("-".repeat(50));
-        System.out.println("\nThis program calculates the average for any given class");
-        System.out.println("When prompted, please enter the number of minors and majors");
-        System.out.println("that are graded in that class. enter only integer values");
-        StringFormat.bold("-".repeat(50));
-        System.out.println();
-
-        StringFormat.redBold("How many minors are being calculated? >>> ");
-        int minorNumber = userInput.nextInt();
-        if (minorNumber > 25) {
-            throw new LargeInput("Input is too large, try again with smaller numbers.");
-        }
-        else if (minorNumber == 0) {
-            throw new InvalidNumber("Cannot calculate grades with nil values");
-        }
+        // user instructions
+        Util.instructions();
 
         // minor grade
-        double totalMinorPoints = GradeMath.gradeCounter(minorNumber, true);
+        int minorNumber = Util.gradeNumber( true);
+        double totalMinorPoints = Util.gradeCounter(minorNumber, true);
 
-        StringFormat.redBold("\nHow many majors are being calculated? >>> ");
-        int majorNumber = userInput.nextInt();
-        if (majorNumber > 25) {
-            throw new LargeInput("Input is too large, try again with smaller numbers.");
-        }
-        else if (majorNumber == 0) {
-            throw new InvalidNumber("Cannot calculate grades with nil values");
-        }
+        // major grade
+        int majorNumber = Util.gradeNumber(false);
+        double totalMajorPoints = Util.gradeCounter(majorNumber, false);
 
-        double totalMajorPoints = GradeMath.gradeCounter(majorNumber, false);
+        double finalGrade = Util.average(minorNumber, Grades.MINOR_WEIGHT, totalMinorPoints) +
+            Util.average(majorNumber, Grades.MAJOR_WEIGHT, totalMajorPoints);
 
-        double finalGrade = GradeMath.average(minorNumber, MINOR_WEIGHT, totalMinorPoints) +
-            GradeMath.average(majorNumber, MAJOR_WEIGHT, totalMajorPoints);
-
-        if (finalGrade > FAILING_GRADE) {
-            StringFormat.passing("\nYour grade for that class is >>> " + GradeMath.roundOff(2, finalGrade));
-        }
-        else {
-            StringFormat.failing("\nYour grade for that class is >>> " + GradeMath.roundOff(2, finalGrade));
-        }
+        Util.finalResult(finalGrade, Grades.FAILING_GRADE);
 
     }
 

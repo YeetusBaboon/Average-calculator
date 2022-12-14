@@ -1,5 +1,7 @@
 package StringFormat;
 
+import Constants.ConsoleColors;
+
 public class StringFormat {
     public static void redBold(String text) {
         System.out.print(ConsoleColors.RED_BOLD + text + ConsoleColors.RESET);
