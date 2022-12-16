@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="52707572-0481-491e-a5dc-b3c8286e09db" name="Changes" comment="remove unnecessary error handling">
-      <change afterPath="$PROJECT_DIR$/src/Constants/Grades.java" afterDir="false" />
+    <list default="true" id="52707572-0481-491e-a5dc-b3c8286e09db" name="Changes" comment="clean up files (with bad naming practice, but wtv), new constants, exported methods and refactored file structure">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GradeMath/GradeMath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Helper/Util.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Constants/Grades.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Constants/Grades.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Helper/Util.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Helper/Util.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/StringFormat/ConsoleColors.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Constants/ConsoleColors.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/StringFormat/StringFormat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StringFormat/StringFormat.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,7 +119,10 @@
       <workItem from="1670906887093" duration="4000" />
       <workItem from="1670948033146" duration="7000" />
       <workItem from="1670978240591" duration="217000" />
-      <workItem from="1670981845722" duration="1659000" />
+      <workItem from="1670981845722" duration="2841000" />
+      <workItem from="1671053871097" duration="1877000" />
+      <workItem from="1671117350715" duration="830000" />
+      <workItem from="1671206315249" duration="962000" />
     </task>
     <task id="LOCAL-00001" summary="Create CalculatorMath -&gt; class file for useful functions">
       <created>1669869241050</created>
@@ -242,7 +243,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670883307895</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="clean up files (with bad naming practice, but wtv), new constants, exported methods and refactored file structure">
+      <created>1671049674276</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1671049674276</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -279,7 +287,8 @@
     <MESSAGE value="replace exception throw" />
     <MESSAGE value="new error handling for nil major and minor numbers" />
     <MESSAGE value="remove unnecessary error handling" />
-    <option name="LAST_COMMIT_MESSAGE" value="remove unnecessary error handling" />
+    <MESSAGE value="clean up files (with bad naming practice, but wtv), new constants, exported methods and refactored file structure" />
+    <option name="LAST_COMMIT_MESSAGE" value="clean up files (with bad naming practice, but wtv), new constants, exported methods and refactored file structure" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

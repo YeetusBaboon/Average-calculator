@@ -5,6 +5,7 @@ import StringFormat.StringFormat;
 import org.jetbrains.annotations.NotNull;
 import java.util.Scanner;
 import ErrorHandling.InvalidNumber;
+import Constants.Grades;
 
 public class Util {
 
@@ -82,10 +83,6 @@ public class Util {
     public static double gradeCounter(int args, boolean grade) throws InvalidNumber {
         Scanner userInput = new Scanner(System.in);
 
-        // changes out of 100 logic
-        final double CHECKING_GRADE = 50.0;
-        final double DEFAULT_GRADE = 100.0;
-
         double result = 0;
         double currentGrade;
 
@@ -100,6 +97,7 @@ public class Util {
             /*
              to extrapolate current grade via averages
              TODO: error catching for user input
+             TODO: store data in arrays
             */
             currentGrade = userInput.nextDouble();
 
@@ -116,8 +114,7 @@ public class Util {
                 }
             }
 
-
-            if (currentGrade > CHECKING_GRADE) {
+            if (currentGrade > Grades.CHECKING_GRADE) {
                 result += currentGrade;
             }
             else {
@@ -125,7 +122,7 @@ public class Util {
                 System.out.print("What is that grade calculated out of (default 100) >>> ");
                 double gradeFraction = userInput.nextDouble();
 
-                result += currentGrade * (DEFAULT_GRADE / gradeFraction);
+                result += currentGrade * (Grades.DEFAULT_GRADE / gradeFraction);
             }
         }
         return result;

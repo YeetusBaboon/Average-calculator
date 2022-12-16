@@ -2,7 +2,6 @@ import Helper.Util;
 import Constants.Grades;
 
 public class Main {
-    // TODO: Write a GPA Calculator using this code
     public static void main(String[] args)
             throws Exception
     {
@@ -20,7 +19,7 @@ public class Main {
         double finalGrade = Util.average(minorNumber, Grades.MINOR_WEIGHT, totalMinorPoints) +
             Util.average(majorNumber, Grades.MAJOR_WEIGHT, totalMajorPoints);
 
-        Util.finalResult(finalGrade, Grades.FAILING_GRADE);
+        Util.finalResult(finalGrade, Grades.PASSING_GRADE);
 
     }
 
